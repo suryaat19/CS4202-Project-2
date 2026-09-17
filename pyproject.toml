@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "samasya"
+version = "0.1.0"
+description = "Benchmark for constraint-governed poetic verification, generation, and repair"
+requires-python = ">=3.10"
+dependencies = ["regex", "matplotlib"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+haiku = ["fugashi", "unidic-lite"]
+
+[tool.setuptools.packages.find]
+include = ["verifiers*", "builders*", "tools*", "eval*"]
+
+[tool.setuptools.package-data]
+"verifiers.padyam" = ["profiles.tsv"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = ["ignore::SyntaxWarning"]

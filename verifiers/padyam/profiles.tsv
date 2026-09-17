@@ -1,0 +1,9 @@
+meter	telugu	class	aksharas_per_paada	sequence	yati	prasa	constraint_classes	in_generate
+vutpalamaala	ఉత్పలమాల	vruttamu	20	bha ra na bha bha ra va	10th akshara	yes	card,seq-fixed,corr	yes
+champakamaala	చంపకమాల	vruttamu	21	na ja bha ja ja ja ra	11th akshara	yes	card,seq-fixed,corr	yes
+saardulamu	శార్దూలము	vruttamu	19	ma sa ja sa ta ta ga	13th akshara	yes	card,seq-fixed,corr	yes
+mattebhamu	మత్తేభము	vruttamu	20	sa bha ra na ma ya va	14th akshara	yes	card,seq-fixed,corr	yes
+kandamu	కందము	jaathi	var	3/5 four-matra ganas; no ja in odd slots; 6th ja or nala; even paadas end guru	1st akshara of 4th gana, paadas 2 and 4	yes	card,seq-choice,corr	yes
+aataveladi	ఆటవెలది	upajaathi	var	paadas 1,3: 3 surya + 2 indra; paadas 2,4: 5 surya	1st akshara of 4th gana (prasa-yati allowed)	no	seq-choice,corr	yes
+teytageethi	తేటగీతి	upajaathi	var	1 surya + 2 indra + 2 surya	1st akshara of 4th gana (prasa-yati allowed)	no	seq-choice,corr	no
+seesamu	సీసము	upajaathi	var	6 indra + 2 surya per paada, then an aataveladi or teytageethi	1st akshara of 3rd gana, each half	no	seq-choice,corr	no
